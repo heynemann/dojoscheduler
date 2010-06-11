@@ -1,0 +1,53 @@
+body {
+    font-family: helvetica;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+div.logo {
+    background: url('/static/img/clockwork.jpg');
+    background-position: fixed;
+    width: 120px;
+    height: 96px;
+    float:left;
+    margin-right: 8px;
+}
+
+.header {
+    background-color: #fc7837;
+}
+
+.menu {
+    background-color: #f8aa7c;
+    height: 28px;
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+.header .title {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 46px;
+    margin-bottom: -15px;
+    margin-top: 4px;
+}
+
+.header .subtitle {
+    color: #000099;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: -8px;
+}

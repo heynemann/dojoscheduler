@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block left-column %}
+    <p class="last-dojos">
+        Last Realized Dojos:
+    </p>
+    <ul>
+    {% for dojo in dojos %}
+        <li>{{dojo.title}} [{{dojo.date}}]</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
