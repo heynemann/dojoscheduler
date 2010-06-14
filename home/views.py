@@ -2,7 +2,7 @@
 
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
-from home.models import *
+from dojo.models import *
 
 def index(request):
     dojos = Dojo.all()

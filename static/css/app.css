@@ -15,19 +15,24 @@ div.logo {
 
 .header {
     background-color: #fc7837;
+    height: 96px;
 }
 
 .menu {
-    background-color: #f8aa7c;
-    height: 28px;
-    padding-top: 8px;
+    background-color: #fc7837;
+    height: 32px;
+    padding-top: 24px;
+    padding-bottom: 4px;
     font-size: 14px;
     font-weight: bold;
+    height: 68px;
 }
 
 .menu a {
     color: black;
     text-decoration: none;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .menu a:hover {
@@ -45,9 +50,24 @@ div.logo {
 }
 
 .header .subtitle {
-    color: #000099;
+    color: #EDEDED;
     font-weight: bold;
     font-size: 20px;
     margin-top: 16px;
     margin-bottom: -8px;
+}
+
+p.info{
+    background: url('/static/img/info.png');
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
+    padding: 8px 8px 8px 24px;
+    background-color: #FFFFDD;
+    color: #303030;
+    border: 1px #DDDDAA solid;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
 }

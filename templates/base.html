@@ -2,34 +2,47 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>Dojo Scheduler - {% block title %}{% endblock %}</title>
-    <script src="/static/js/jquery-1.4.2.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="/static/css/960.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="/static/css/app.css" type="text/css" media="screen" />
-    {% block js %}{% endblock %}
     {% block css %}{% endblock %}
+    <script src="/static/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="/static/js/dojo.plugins.scheduler.js" type="text/javascript"></script>
+    <script src="/static/js/dojo.plugins.authenticated.js" type="text/javascript"></script>
+    <script src="/static/js/newdojo.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(document).data('isAuthenticated', false);
+        });
+    </script>
+    {% block js %}{% endblock %}
 </head>
 <body>
     <div id="header" class="container_12">
-        <div id="header_content" class="grid_12 header">
+        <div id="header_content" class="grid_5 header">
             <div class="logo"></div>
             <p class="title">Dojo Scheduler</p>
             <p class="subtitle">Schedule your dojo here</p>
             {% block header %}{% endblock %}
         </div>
-        <div id="header_menu" class="grid_12 menu">
-            [<a href="/">Home</a>] | [<a href="/dojo/new">New Dojo</a>]
+        <div id="header_menu" class="grid_7 menu">
+            <a href="/" title="Home page">
+                <img src="/static/img/home.png" border="0" width="48" height="48" alt="Home page" />
+            </a>
+            <a href="/dojo/new" class="new-dojo" title="Schedule your dojo here!">
+                <img src="/static/img/clock.png" border="0" width="48" height="48" alt="Schedule your dojo here!" />
+                </a>
             {% block menu %}{% endblock %}
         </div>
     </div>
 
     <div id="content" class="container_12">
         <div id="left_column" class="grid_3 left-column">
+            <p class="info">Use this website to schedule dojos and have people confirm attendance.</p>
             {% block left-column %}{% endblock %}
         </div>
 
         <div id="main_column" class="grid_9 main-column">
             {% block main-column %}{% endblock %}
-            Outra coisa
         </div>
     </div>
 

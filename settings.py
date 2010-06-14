@@ -102,7 +102,8 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = (
      'appengine_django',
-     'home'
+     'home',
+     'dojo'
 #    'django.contrib.auth',
 #    'django.contrib.contenttypes',
 #    'django.contrib.sessions',
